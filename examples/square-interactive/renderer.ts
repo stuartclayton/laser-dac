@@ -1,6 +1,5 @@
 import { DAC } from '@laser-dac/core';
 import { Simulator } from '@laser-dac/simulator';
-import { EtherDream } from '@laser-dac/ether-dream';
 import { Scene, Rect, loadIldaFile, Ilda } from '@laser-dac/draw';
 import * as path from 'path';
 

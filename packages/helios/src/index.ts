@@ -11,6 +11,7 @@ export class Helios extends Device {
   private interval?: NodeJS.Timer;
 
   async start() {
+    console.log('starting stu helios');
     this.stop();
     const devices = heliosLib.openDevices();
     if (devices) {

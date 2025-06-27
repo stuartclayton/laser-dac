@@ -1,6 +1,6 @@
 import { DAC } from '@laser-dac/core';
 import { Simulator } from '@laser-dac/simulator';
-import { EtherDream } from '@laser-dac/ether-dream';
+import { Helios } from '@laser-dac/helios';
 import { Scene, HersheyFont, loadHersheyFont, Timeline } from '@laser-dac/draw';
 import * as path from 'path';
 
@@ -40,7 +40,7 @@ const textAnimation = new Timeline({
   const dac = new DAC();
   dac.use(new Simulator());
   if (process.env.DEVICE) {
-    dac.use(new EtherDream());
+    dac.use(new Helios());
   }
   await dac.start();
 

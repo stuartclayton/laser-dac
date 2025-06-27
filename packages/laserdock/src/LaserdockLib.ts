@@ -1,6 +1,6 @@
 import * as path from 'path';
-import * as ffi from 'ffi-napi';
-import * as ref from 'ref-napi';
+//import * as ffi from 'ffi-napi';
+//import * as ref from 'ref-napi';
 
 const ArrayType = require('ref-array-di')(ref);
 const Struct = require('ref-struct-di')(ref);

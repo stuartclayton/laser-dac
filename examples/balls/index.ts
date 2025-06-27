@@ -1,6 +1,6 @@
 import { DAC } from '@laser-dac/core';
 import { Simulator } from '@laser-dac/simulator';
-import { EtherDream } from '@laser-dac/ether-dream';
+import { Helios } from '@laser-dac/helios';
 import { Scene, Rect } from '@laser-dac/draw';
 import { Ball } from './Ball';
 
@@ -10,7 +10,7 @@ const NUMBER_OF_BALLS = 4;
   const dac = new DAC();
   dac.use(new Simulator());
   if (process.env.DEVICE) {
-    dac.use(new EtherDream());
+    dac.use(new Helios());
   }
   await dac.start();
 

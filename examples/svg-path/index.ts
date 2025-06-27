@@ -1,6 +1,6 @@
 import { DAC } from '@laser-dac/core';
 import { Simulator } from '@laser-dac/simulator';
-import { EtherDream } from '@laser-dac/ether-dream';
+import { Helios } from '@laser-dac/helios';
 import { Scene, Svg, loadSvgFile } from '@laser-dac/draw';
 import * as path from 'path';
 
@@ -10,7 +10,7 @@ const logoFile = loadSvgFile(path.resolve(__dirname, './logo.svg'));
   const dac = new DAC();
   dac.use(new Simulator());
   if (process.env.DEVICE) {
-    dac.use(new EtherDream());
+    dac.use(new Helios());
   }
   await dac.start();
 

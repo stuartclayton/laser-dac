@@ -1,6 +1,14 @@
 {
   "lerna": "3.4.0",
-  "packages": ["packages/*", "examples"],
+  "packages": [
+    "packages/core",
+    "packages/draw",
+    "packages/simulator",
+    "packages/ilda-reader",
+    "packages/ilda-writer",
+    "examples",
+    "packages/helios"
+  ],
   "version": "independent",
   "npmClient": "yarn",
   "useWorkspaces": true
